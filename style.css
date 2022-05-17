@@ -30,13 +30,13 @@ main {width: 100%; height: auto; padding-bottom: 70px; min-height: calc(100% - 1
 .datebox {width: 250px; height: 20px; text-align: center; margin-top: 30px; background: var(--black); border-radius: 20px; font-size: 13px; color: var(--blue-text); font-weight: bold; padding: 5px; position: relative; left: calc(50% - 125px);}
 
 section {min-height: 60px; width: 100%;}
-.info {height: 60px;}
-.profile {width: 50px; height: 50px; margin:10px 5px 0 20px; display: inline-block;}
-.profile > img {border-radius: 50px; width: 50px;}
-.name {display: inline-block; font-size: 12px; vertical-align: bottom; padding-bottom: 10px;}
+.info {height: 55px;}
+.profile {width: 40px; height: 40px; margin:10px 10px 0 20px; display: inline-block;}
+.profile > img {border-radius: 50px; width: 40px;}
+.name {display: inline-block; font-size: 12px; vertical-align: bottom; padding-bottom: 5px;}
 
 .content {width: 100%;}
-.message {background: var(--main-color); border-radius: 20px; padding: 10px 20px 10px 20px; margin: 0 0 10px 80px; font-size: 13px; display: inline-block; max-width: calc(100% - 240px);}
+.message {background: var(--main-color); border-radius: 20px; padding: 10px 20px 10px 20px; margin: 0 0 10px 70px; font-size: 13px; display: inline-block; max-width: calc(100% - 240px);}
 .message > img {width: 100%;}
 .time {display: inline-block; width: 110px; font-size: 12px; vertical-align: bottom; margin: 0 0 10px 5px; color: var(--gray-text); font-weight: bold;}
 
