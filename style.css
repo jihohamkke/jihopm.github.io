@@ -14,7 +14,7 @@ a:hover, a:active {text-decoration: none;}
 ::-webkit-scrollbar {display: none;}
 
 
-html, body {padding: 0; margin: 0; height: 100%; font-family: sans-serif; -ms-overflow-style: none; position: relative; background: var(--back-color);}
+html, body {padding: 0; margin: 0; height: 100%; font-family: sans-serif; -ms-overflow-style: none; position: relative; background: var(--back-color); -ms-overflow-style: none;}
 
 #app {width: 100%; height: auto; max-width: 500px; color: var(--white); position: absolute; left: 50%; transform: translateX(-50%);}
 
