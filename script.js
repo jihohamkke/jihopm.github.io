@@ -1,4 +1,4 @@
-import list from './db.json' assert {type:"json"};
+import list from './db.json' assert {type:'module'};
 
 const app = Vue.createApp({
     data() {
