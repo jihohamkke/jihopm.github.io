@@ -1,4 +1,4 @@
-import db from './db.json' assert {type:'json'};
+//import db from './db.json' assert {type:'json'};
 
 const app = Vue.createApp({
     data() {
@@ -99,7 +99,7 @@ const app = Vue.createApp({
         }
     },
     mounted(){
-      this.list=db
+      axios.get("./db.json").then(response => (this.list = response.data));
     }
 });
 
