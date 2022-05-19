@@ -60,11 +60,11 @@
             </div>
             <section v-for="(talks,i) in list[i].talk">
                 <div class="info">
-                    <div class="profile"><img src="./img/profile.jpg" alt=""></div>
+                    <div class="profile"><img src="./img/profile.jpg" alt="프로필사진"></div>
                     <div class="name">지호</div>
                 </div>
                 <div class="content">
-                    <div class="message">{{ talks.text }}<img :src="talks.img"></div>
+                    <div class="message">{{ talks.text }}<img v-if="img!=null" :src="talks.img"></div>
                     <div class="time">{{ talks.time }}</div>
                 </div>
             </section>
