@@ -1,9 +1,9 @@
-import list from './db.json' assert {type:'json'};
+import db from './db.json' assert {type:'json'};
 
 const app = Vue.createApp({
     data() {
         return {
-            list:list,
+            list:[],
             year:"2021",
             month:"04",
             monthList1:[
@@ -98,6 +98,9 @@ const app = Vue.createApp({
             ]
         }
     },
+    mounted(){
+      this.list=db
+    }
 });
 
 app.mount('#app');
