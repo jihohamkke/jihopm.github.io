@@ -1,4 +1,4 @@
-//index.html
+//landing
 
 const bday = document.querySelector('input[name="check"]');
 
@@ -9,17 +9,19 @@ function enter(e) {
 }
 
 function check() {
-    if (bday.value == 970404) {
-        window.location.href='./message.html';
-    } else if (bday.value == 19970404) {
-        window.location.href='./message.html';   
+    let body = document.body;
+    let landing = document.querySelector('.landing');
+    if (bday.value == 220425) {
+        landing.style.display = 'none';
+        body.style.overflow = '';
     } else {
+        alert('잘못된 날짜입니다');
         return;
     }
 }
 
 
-//message.html
+//message
 
 const btnBottom = document.querySelector('.recent');
 const btnTop = document.querySelector('.send');
@@ -33,7 +35,10 @@ function goDown() {
 }
 
 function goBack() {
-    window.location.href='./index.html';
+    let body = document.body;
+    let landing = document.querySelector('.landing');
+    landing.style.display = 'block';
+    body.style.overflow = 'hidden';
 }
 
 function goTo() {
