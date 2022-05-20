@@ -38,7 +38,7 @@ function goDown() {
 }
 
 function goBack() {
-    window.location.href='./index.html';   
+    location.reload();
 }
 
 function goTo() {
