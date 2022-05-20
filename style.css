@@ -68,10 +68,11 @@ input[type=radio]:checked + label {background: var(--main-color);}
 .alarm {width: 300px; height: 80px; background: var(--gray-text); margin-top: 30%; position: relative; left: calc(50% - 150px); border-radius: 15px; color: var(--white);}
 .alarm > h5 {margin: 0; padding: 20px 0 0 20px;}
 .alarm > span {padding-left: 20px; font-size: 14px;}
-.check {width: 200px; height: 35px; border: 0; padding: 0; border-radius: 5px; position: relative; left: calc(50% - 100px); margin-top: 70%; display: block; background: var(--gray-text); text-align: center; color: var(--white);}
+.enter {width: 200px; position: absolute; left: calc(50% - 100px); bottom: 25%;}
+.check {width: 200px; height: 35px; border: 0; padding: 0; border-radius: 5px; display: block; background: var(--gray-text); text-align: center; color: var(--white);}
 .check::placeholder {text-align: center; color: rgba(256,256,256,0.2); font-size: 12px;}
 .check:focus {outline: none;}
 .check:focus::placeholder {color: transparent;}
-.enter {width: 200px; height: 35px; border-radius: 5px; border: 0; margin-top: 10px;  position: relative; left: calc(50% - 100px); background: var(--main-color); color: var(--white); font-size: 14px; line-height: 35px; cursor: pointer;}
+.enterBtn {width: 200px; height: 35px; border-radius: 5px; border: 0; margin-top: 10px; background: var(--main-color); color: var(--white); font-size: 14px; line-height: 35px; cursor: pointer;}
 .contact {width: 100%; height: 30px; text-align: center; margin: 0; font-size: 12px; position: absolute; bottom: 0;}
 .contact > a {color: var(--gray-text);}

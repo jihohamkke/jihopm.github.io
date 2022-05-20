@@ -1,6 +1,10 @@
 //landing
 
-const bday = document.querySelector('input[name="check"]');
+const day = document.querySelector('input[name="check"]');
+
+let body = document.body;
+let landing = document.querySelector('.landing');
+let app = document.querySelector('#app');
 
 function enter(e) {
     if (e.keyCode == 13) {
@@ -9,11 +13,10 @@ function enter(e) {
 }
 
 function check() {
-    let body = document.body;
-    let landing = document.querySelector('.landing');
-    if (bday.value == 220425) {
+    if (day.value == 220425) {
         landing.style.display = 'none';
         body.style.overflow = '';
+        app.style.visibility = 'visible';
     } else {
         alert('잘못된 날짜입니다');
         return;
@@ -35,10 +38,9 @@ function goDown() {
 }
 
 function goBack() {
-    let body = document.body;
-    let landing = document.querySelector('.landing');
     landing.style.display = 'block';
     body.style.overflow = 'hidden';
+    app.style.visibility = 'hidden';
 }
 
 function goTo() {
