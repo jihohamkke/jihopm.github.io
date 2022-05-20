@@ -38,9 +38,7 @@ function goDown() {
 }
 
 function goBack() {
-    landing.style.display = 'block';
-    body.style.overflow = 'hidden';
-    app.style.visibility = 'hidden';
+    window.location.href='./index.html';   
 }
 
 function goTo() {
