@@ -65,6 +65,8 @@ function goTo() {
 }
 
 
+//calendar
+
 const btnCalendar = document.querySelector('.calendar');
 
 function calendar() {
