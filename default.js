@@ -23,6 +23,10 @@ function check() {
     }
 }
 
+function reset() {
+    window.scrollTo(0,0);
+}
+
 
 //message
 
