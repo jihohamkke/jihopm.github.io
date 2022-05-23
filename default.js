@@ -39,7 +39,7 @@ function goDown() {
 
 function goBack() {
     location.reload();
-    body.style.overflow = '';
+    app.style.visibility = 'visible';
 }
 
 function goTo() {
