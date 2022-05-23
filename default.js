@@ -38,6 +38,7 @@ function goDown() {
 }
 
 function goBack() {
+    body.style.overflow = '';
     location.reload();
 }
 
