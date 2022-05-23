@@ -1,5 +1,7 @@
 //landing
 
+history.scrollRestoration = "manual";
+
 const day = document.querySelector('input[name="check"]');
 
 let body = document.body;
@@ -21,10 +23,6 @@ function check() {
         alert('잘못된 날짜입니다');
         return;
     }
-}
-
-window.onload = function() {
-    window.scrollTo(0,0);
 }
 
 
