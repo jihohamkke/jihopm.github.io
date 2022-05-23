@@ -39,7 +39,6 @@ function goDown() {
 
 function goBack() {
     location.reload();
-    app.style.visibility = 'visible';
 }
 
 function goTo() {
