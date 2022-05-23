@@ -38,6 +38,7 @@ function goDown() {
 }
 
 function goBack() {
+    window.scrollTo(0,0);
     location.reload();
 }
 
