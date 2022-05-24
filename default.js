@@ -19,6 +19,7 @@ function check() {
         landing.style.display = 'none';
         body.style.overflow = '';
         app.style.visibility = 'visible';
+        window.scrollTo(0,0);
     } else {
         alert('잘못된 날짜입니다');
         return;
