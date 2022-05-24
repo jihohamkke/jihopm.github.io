@@ -16,10 +16,10 @@ function enter(e) {
 
 function check() {
     if (day.value == 220425) {
+        window.scrollTo(0,0);
         landing.style.display = 'none';
         body.style.overflow = '';
         app.style.visibility = 'visible';
-        window.scrollTo(0,0);
     } else {
         alert('잘못된 날짜입니다');
         return;
