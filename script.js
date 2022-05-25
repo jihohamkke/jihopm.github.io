@@ -85,10 +85,22 @@ const app = Vue.createApp({
                 {label:"22일", value:"22"},
                 {label:"25일", value:"25"},
                 {label:"27일", value:"27"},
-                {label:"30일", value:"30"},
+                {label:"30일", value:"30"}
             ],
             dayList2110: [
-                
+                {label:"4일", value:"04"},
+                {label:"9일", value:"09"},
+                {label:"11일", value:"11"},
+                {label:"14일", value:"14"},
+                {label:"17일", value:"17"},
+                {label:"19일", value:"19"},
+                {label:"20일", value:"20"},
+                {label:"23일", value:"23"},
+                {label:"25일", value:"25"},
+                {label:"27일", value:"27"},
+                {label:"28일", value:"28"},
+                {label:"30일", value:"30"},
+                {label:"31일", value:"31"}
             ],
             dayList2111: [
                 
@@ -111,7 +123,7 @@ const app = Vue.createApp({
         }
     },
     mounted(){
-      axios.get("./db.json").then(response => (this.list = response.data));
+        axios.get("./db.json").then(response => (this.list = response.data));
     }
 });
 
