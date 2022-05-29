@@ -3,6 +3,7 @@
 const app = Vue.createApp({
     data() {
         return {
+//            loading: true,
             list:[],
             year:"2021",
             month:"04",
@@ -103,7 +104,20 @@ const app = Vue.createApp({
                 {label:"31일", value:"31"}
             ],
             dayList2111: [
-                
+                {label:"2일", value:"02"},
+                {label:"5일", value:"05"},
+                {label:"9일", value:"09"},
+                {label:"10일", value:"10"},
+                {label:"12일", value:"12"},
+                {label:"14일", value:"14"},
+                {label:"17일", value:"17"},
+                {label:"18일", value:"18"},
+                {label:"21일", value:"21"},
+                {label:"23일", value:"23"},
+                {label:"25일", value:"25"},
+                {label:"26일", value:"26"},
+                {label:"29일", value:"29"},
+                {label:"30일", value:"30"}
             ],
             dayList2112: [
                 
@@ -123,7 +137,9 @@ const app = Vue.createApp({
         }
     },
     mounted(){
-        axios.get("./db.json").then(response => (this.list = response.data));
+        axios.get("./db.json")
+            .then(response => (this.list = response.data))
+//            .finally(() => this.loading = false);
     }
 });
 
