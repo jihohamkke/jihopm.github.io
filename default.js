@@ -20,7 +20,7 @@ function check() {
         landing.style.display = 'none';
         body.style.overflow = '';
         app.style.visibility = 'visible';
-    } else if (day.value == 0425) {
+    } else if (day.value == 20220425) {
         window.scrollTo(0,0);
         landing.style.display = 'none';
         body.style.overflow = '';
