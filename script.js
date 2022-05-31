@@ -120,7 +120,17 @@ const app = Vue.createApp({
                 {label:"30일", value:"30"}
             ],
             dayList2112: [
-                
+                {label:"2일", value:"02"},
+                {label:"8일", value:"08"},
+                {label:"9일", value:"09"},
+                {label:"15일", value:"15"},
+                {label:"19일", value:"19"},
+                {label:"21일", value:"21"},
+                {label:"22일", value:"22"},
+                {label:"23일", value:"23"},
+                {label:"27일", value:"27"},
+                {label:"28일", value:"28"},
+                {label:"30일", value:"30"}
             ],
             dayList2201: [
                 
