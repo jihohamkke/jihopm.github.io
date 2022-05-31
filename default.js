@@ -30,6 +30,11 @@ function check() {
         landing.style.display = 'none';
         body.style.overflow = '';
         app.style.visibility = 'visible';
+    } else if (day.value == '2022.04.25') {
+        window.scrollTo(0,0);
+        landing.style.display = 'none';
+        body.style.overflow = '';
+        app.style.visibility = 'visible';
     } else {
         alert('잘못된 날짜입니다');
         return;
