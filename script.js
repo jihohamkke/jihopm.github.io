@@ -161,9 +161,9 @@ const app = Vue.createApp({
                   }
               }
           }
-          let nickname = document.querySelector('input[name="nick"]');
+          let nick = document.querySelector('input[name="nick"]');
           let btn = document.querySelector('.send');
-          nickname.disabled = true;
+          nick.disabled = true;
           btn.disabled = true;
       }  
     },
