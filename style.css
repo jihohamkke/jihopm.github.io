@@ -10,13 +10,14 @@
 
 a {text-decoration: none; outline: none}
 a:hover, a:active {text-decoration: none;}
+input:focus {outline: none;}
 
 ::-webkit-scrollbar {display: none;}
 
 
 html, body {padding: 0; margin: 0; height: 100%; font-family: sans-serif; -ms-overflow-style: none; position: relative; background: var(--back-color); -ms-overflow-style: none;}
 
-#app {width: 100%; height: auto; max-width: 500px; color: var(--white); position: absolute; left: 50%; transform: translateX(-50%);}
+.sub {width: 100%; height: auto; max-width: 500px; color: var(--white); position: absolute; left: 50%; transform: translateX(-50%);}
 
 nav {background: var(--black); width: 100%; height: 60px; max-width: 500px; line-height: 60px; font-size: 18px; text-align: center; position: sticky; top: 0; display: flex; justify-content: space-between; z-index: 200;}
 
@@ -47,8 +48,13 @@ section {min-height: 60px; width: 100%;}
 footer {width: 100%; height: 60px; max-width: 500px; display: flex; position: sticky; bottom: 0; background: var(--black); z-index: 100;}
 .recent {width: 150px; height: 20px; text-align: center; background: var(--black); border-radius: 20px; font-size: 13px; color: var(--blue-text);  padding: 5px; position: absolute; bottom: 75px; left: calc(50% - 75px); cursor: pointer; line-height: 20px;}
 .textbox {border: 1px solid var(--gray-text); height: 40px; border-radius: 20px; width: calc(100% - 40px); margin: 10px 0 0 20px;}
-.missyou {display: inline-block; width: calc(100% - 50px); line-height: 40px; margin-left: 10px; color: var(--gray-text); font-size: 13px; font-weight: bold;}
-.send {display: inline-block; width: 30px; height: 30px; background: var(--point-color); text-align: center; line-height: 30px; border-radius: 30px; cursor: pointer;}
+.nickname {display: inline-block; width: calc(100% - 50px); line-height: 40px; margin-left: 10px;}
+.nickname > input {width: 95%; height: 24px; background: transparent; border: 0; color: var(--white); font-size: 13px; font-weight: bold;}
+.nickname > input:disabled {color: var(--gray-text);}
+.nickname > input::placeholder {color: var(--gray-text);}
+.nickname > input:focus::placeholder {color: transparent;}
+.send {display: inline-block; width: 30px; height: 30px; background: var(--point-color); text-align: center; border-radius: 30px; cursor: pointer; color: var(--white); border: 0;}
+.send:disabled {background: var(--gray-text); cursor: auto;}
 
 /* search */
 .search {width: 100%; height: 300px; max-width: 500px; background: var(--black); z-index: 200; position: sticky; top: 60px; border-radius: 0 0 20px 20px;}

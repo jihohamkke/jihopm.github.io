@@ -4,6 +4,7 @@ const app = Vue.createApp({
     data() {
         return {
 //            loading: true,
+            nickname: "",
             list:[],
             year:"2021",
             month:"04",
@@ -145,6 +146,26 @@ const app = Vue.createApp({
                 
             ]
         }
+    },
+    methods: {
+      setNick(e) {
+          e.preventDefault();
+          let msg = this.list;
+          
+          for(let i=0; i<msg.length; i++){
+              for(let j=0; j<msg[i].talk.length; j++) {
+                  let text = msg[i].talk[j].text;
+                  if (text) {
+                      text = text.replace("@@", this.nickname);
+                      msg[i].talk[j].text = text;
+                  }
+              }
+          }
+          let nickname = document.querySelector('input[name="nick"]');
+          let btn = document.querySelector('.send');
+          nickname.disabled = true;
+          btn.disabled = true;
+      }  
     },
     mounted(){
         axios.get("./db.json")
