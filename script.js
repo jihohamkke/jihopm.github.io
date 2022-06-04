@@ -134,7 +134,16 @@ const app = Vue.createApp({
                 {label:"30일", value:"30"}
             ],
             dayList2201: [
-                
+                {label:"3일", value:"03"},
+                {label:"4일", value:"04"},
+                {label:"6일", value:"06"},
+                {label:"8일", value:"08"},
+                {label:"11일", value:"11"},
+                {label:"17일", value:"17"},
+                {label:"18일", value:"18"},
+                {label:"20일", value:"20"},
+                {label:"24일", value:"24"},
+                {label:"26일", value:"26"}
             ],
             dayList2202: [
                 
@@ -161,6 +170,7 @@ const app = Vue.createApp({
                   }
               }
           }
+          
           let nick = document.querySelector('input[name="nick"]');
           let btn = document.querySelector('.send');
           nick.disabled = true;
