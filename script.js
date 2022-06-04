@@ -157,23 +157,28 @@ const app = Vue.createApp({
     },
     methods: {
         setNick(e) {
-          e.preventDefault();
-          let msg = this.list;
+            e.preventDefault();
+            if (!this.nickname) {
+                alert('애칭을 입력해주세요');
+                return;
+            } else {
+                let msg = this.list;
 
-          for(let i=0; i<msg.length; i++){
-              for(let j=0; j<msg[i].talk.length; j++) {
-                  let text = msg[i].talk[j].text;
-                  if (text) {
-                      text = text.replace("@@", this.nickname);
-                      msg[i].talk[j].text = text;
+                for(let i=0; i<msg.length; i++){
+                  for(let j=0; j<msg[i].talk.length; j++) {
+                      let text = msg[i].talk[j].text;
+                      if (text) {
+                          text = text.replace("@@", this.nickname);
+                          msg[i].talk[j].text = text;
+                      }
                   }
-              }
-          }
+                }
 
-          let nick = document.querySelector('input[name="nick"]');
-          let btn = document.querySelector('.send');
-          nick.disabled = true;
-          btn.disabled = true;
+                let nick = document.querySelector('input[name="nick"]');
+                let btn = document.querySelector('.send');
+                nick.disabled = true;
+                btn.disabled = true;
+            }
         },
         setImg(value) {
             let profile = value.concat('.jpg');
