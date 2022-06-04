@@ -1,8 +1,7 @@
 const app = Vue.createApp({
     data() {
         return {
-//            loading: true,
-            profile: "profile1.jpg",
+            profile: "profile5.jpg",
             nickname: "",
             list:[],
             year:"2021",
@@ -173,7 +172,7 @@ const app = Vue.createApp({
                       }
                   }
                 }
-
+                
                 let nick = document.querySelector('input[name="nick"]');
                 let btn = document.querySelector('.send');
                 nick.disabled = true;
@@ -188,7 +187,6 @@ const app = Vue.createApp({
     mounted(){
         axios.get("./db.json")
             .then(response => (this.list = response.data));
-//            .finally(() => this.loading = false);
     }
 });
 
