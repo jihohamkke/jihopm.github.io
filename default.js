@@ -6,7 +6,7 @@ const day = document.querySelector('input[name="check"]');
 
 let body = document.body;
 let landing = document.querySelector('.landing');
-let app = document.querySelector('#app');
+let sub = document.querySelector('.sub');
 
 function enter(e) {
     if (e.keyCode == 13) {
@@ -16,10 +16,10 @@ function enter(e) {
 
 function check() {
     if (day.value == 220425 || day.value == 20220425 || day.value == '0425' || day.value == '2022.04.25') {
-        window.scrollTo(0,0);
         landing.style.display = 'none';
         body.style.overflow = '';
-        app.style.visibility = 'visible';
+        sub.style.visibility = 'visible';
+        window.scrollTo(0,0);
     } else {
         alert('잘못된 날짜입니다');
         return;
@@ -64,7 +64,6 @@ function goTo() {
             return;
         }
     }
-
 }
 
 
@@ -78,5 +77,17 @@ function calendar() {
         search.style.display = 'block';
     } else if (search.style.display == 'block') {
         search.style.display = 'none';
+    }
+}
+
+
+//profile
+
+function profile() {
+    let toast = document.querySelector('.toast');
+    if (toast.style.display == 'none') {
+        toast.style.display = 'block';
+    } else if (toast.style.display == 'block') {
+        toast.style.display = 'none';
     }
 }

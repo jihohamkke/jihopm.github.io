@@ -76,7 +76,7 @@
             </div>
             <section v-for="(talks,i) in list[i].talk">
                 <div class="info">
-                    <div class="profile"><img src="./img/profile.jpg" alt="프로필사진"></div>
+                    <div class="profile"><img :src="`./img/${profile}`" alt="프로필사진"></div>
                     <div class="name">지호</div>
                 </div>
                 <div class="content">
@@ -86,6 +86,30 @@
             </section>
         </article>
     </main>
+    <div class="toast" style="display: none">
+        <div class="container">
+            <div class="image">
+                <input type="radio" @click="setImg('profile1')" class="imgBtn" name="image" id="profile1" value="profile1" checked>
+                <label for="profile1"><img src="./img/profile1.jpg" alt="profile1"></label>
+            </div>
+            <div class="image">
+                <input type="radio" @click="setImg('profile2')" class="imgBtn" name="image" id="profile2" value="profile2">
+                <label for="profile2"><img src="./img/profile2.jpg" alt="profile2"></label>
+            </div>
+            <div class="image">
+                <input type="radio" @click="setImg('profile3')" class="imgBtn" name="image" id="profile3" value="profile3">
+                <label for="profile3"><img src="./img/profile3.jpg" alt="profile3"></label>
+            </div>
+            <div class="image">
+                <input type="radio" @click="setImg('profile4')" class="imgBtn" name="image" id="profile4" value="profile4">
+                <label for="profile4"><img src="./img/profile4.jpg" alt="profile4"></label>
+            </div>
+            <div class="image">
+                <input type="radio" @click="setImg('profile5')" class="imgBtn" name="image" id="profile5" value="profile5">
+                <label for="profile5"><img src="./img/profile5.jpg" alt="profile5"></label>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="recent" onclick="goDown()">
             최신 메시지로 이동 <i class="fa-solid fa-angle-down"></i>
@@ -95,6 +119,7 @@
                 <div class="nickname">
                         <input type="text" autocomplete="off" name="nick" placeholder="애칭을 입력해주세요" maxlength="10" v-model="nickname">
                 </div>
+                <div class="smile" onclick="profile()"><i class="fa-solid fa-face-smile"></i></div>
                 <button class="send"><i class="fa-solid fa-arrow-up"></i></button>
             </form>
         </div>

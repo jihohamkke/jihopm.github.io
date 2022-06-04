@@ -1,23 +1,22 @@
-//import db from './db.json' assert {type:'json'};
-
 const app = Vue.createApp({
     data() {
         return {
 //            loading: true,
+            profile: "profile1.jpg",
             nickname: "",
             list:[],
             year:"2021",
             month:"04",
             monthList1:[
-                {label:"4월", value:"04"},
-                {label:"5월", value:"05"},
-                {label:"6월", value:"06"},
-                {label:"7월", value:"07"},
-                {label:"8월", value:"08"},
-                {label:"9월", value:"09"},
-                {label:"10월", value:"10"},
-                {label:"11월", value:"11"},
-                {label:"12월", value:"12"}
+                {"label":"4월", "value":"04"},
+                {"label":"5월", "value":"05"},
+                {"label":"6월", "value":"06"},
+                {"label":"7월", "value":"07"},
+                {"label":"8월", "value":"08"},
+                {"label":"9월", "value":"09"},
+                {"label":"10월", "value":"10"},
+                {"label":"11월", "value":"11"},
+                {"label":"12월", "value":"12"}
             ],
             monthList2:[
                 {label:"1월", value:"01"},
@@ -157,10 +156,10 @@ const app = Vue.createApp({
         }
     },
     methods: {
-      setNick(e) {
+        setNick(e) {
           e.preventDefault();
           let msg = this.list;
-          
+
           for(let i=0; i<msg.length; i++){
               for(let j=0; j<msg[i].talk.length; j++) {
                   let text = msg[i].talk[j].text;
@@ -170,16 +169,20 @@ const app = Vue.createApp({
                   }
               }
           }
-          
+
           let nick = document.querySelector('input[name="nick"]');
           let btn = document.querySelector('.send');
           nick.disabled = true;
           btn.disabled = true;
-      }  
+        },
+        setImg(value) {
+            let profile = value.concat('.jpg');
+            this.profile = profile;
+        }
     },
     mounted(){
         axios.get("./db.json")
-            .then(response => (this.list = response.data))
+            .then(response => (this.list = response.data));
 //            .finally(() => this.loading = false);
     }
 });
