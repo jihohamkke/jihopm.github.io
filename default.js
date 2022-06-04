@@ -26,6 +26,10 @@ function check() {
     }
 }
 
+window.onload = function() {
+    let loading = document.querySelector('.loading');
+//    loading.innerText = "@jihoud";
+}
 
 //message
 
