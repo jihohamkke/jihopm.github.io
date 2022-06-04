@@ -66,6 +66,7 @@ footer {width: 100%; height: 60px; max-width: 500px; display: flex; position: st
 .month {width: 100%; height: 35px; position: relative; top: 90px; display: flex; justify-content: space-evenly;}
 .select {width: 220px; background: var(--back-color); color: var(--white); border: 0; padding: 10px; border-radius: 5px; border-right: 7px solid transparent; cursor: pointer;}
 .day {width: 100%; height: 35px; position: relative; top: 110px; display: flex; justify-content: space-evenly; cursor: pointer;}
+.select:focus {outline: none;}
 .move {width: 100%; height: 35px; position: relative; top: 130px; display: flex; justify-content: space-evenly;}
 .moveBtn {width: 220px; height: 35px; border-radius: 5px; background: var(--main-color); color: var(--white); border: 0; line-height: 35px; cursor: pointer;}
 
