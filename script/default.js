@@ -27,8 +27,7 @@ function check() {
 }
 
 window.onload = function() {
-    let loading = document.querySelector('.loading');
-//    loading.innerText = "@jihoud";
+    day.placeholder = '마지막 프메 날짜를 입력해주세요';
 }
 
 //message
