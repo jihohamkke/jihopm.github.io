@@ -205,6 +205,9 @@ const app = Vue.createApp({
         setImg(value) {
             let profile = value.concat('.jpg');
             this.profile = profile;
+        },
+        inputNick(e) {
+            this.nickname = e.target.value;
         }
     },
     mounted(){
