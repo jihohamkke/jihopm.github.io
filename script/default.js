@@ -44,9 +44,9 @@ function goDown() {
 }
 
 function goBack() {
-    day.placeholder = 'Loading..';
     window.scrollTo(0,0);
     location.reload();
+    day.placeholder = 'Loading..';
 }
 
 function goTo() {
