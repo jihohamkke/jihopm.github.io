@@ -181,7 +181,7 @@ const app = Vue.createApp({
                 {label:"13일", value:"13"},
                 {label:"15일", value:"15"},
                 {label:"18일", value:"18"},
-                {label:"25일", value:"23"}
+                {label:"25일", value:"25"}
             ]
         }
     },
