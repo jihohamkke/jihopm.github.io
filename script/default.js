@@ -15,7 +15,7 @@ function enter(e) {
 }
 
 function check() {
-    if (day.value == 220425 || day.value == 20220425 || day.value == '0425') {
+    if (day.value == 220425 || day.value == 20220425 || day.value == '0425' || day.value == '2022.04.25') {
         landing.style.display = 'none';
         body.style.overflow = '';
         sub.style.visibility = 'visible';
@@ -28,6 +28,20 @@ function check() {
 
 window.onload = function() {
     day.placeholder = '마지막 프메 날짜를 입력해주세요';
+}
+
+let alarm = document.querySelector('.alarm');
+
+function hide() {
+    if (window.innerHeight < 600) {
+        alarm.style.visibility = 'hidden';   
+    }
+}
+
+function show() {
+    if (alarm.style.visibility=='hidden') {
+        alarm.style.visibility = 'visible';
+    }
 }
 
 //message
