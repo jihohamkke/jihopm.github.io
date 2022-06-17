@@ -30,6 +30,7 @@ window.onload = function() {
     day.placeholder = '마지막 프메 날짜를 입력해주세요';
 }
 
+
 //message
 
 const btnBottom = document.querySelector('.recent');
