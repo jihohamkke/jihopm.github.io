@@ -15,7 +15,7 @@ function enter(e) {
 }
 
 function check() {
-    if (day.value == 220425 || day.value == 20220425 || day.value == '0425' || day.value == '2022.04.25') {
+    if (day.value == 220425 || day.value == 20220425 || day.value == '0425') {
         landing.style.display = 'none';
         body.style.overflow = '';
         sub.style.visibility = 'visible';
