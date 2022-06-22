@@ -27,7 +27,7 @@ function check() {
 }
 
 window.onload = function() {
-    day.placeholder = 'Please enter the last PM date (YYMMDD)';
+    day.placeholder = 'Enter the last PM date (YYMMDD)';
 }
 
 
