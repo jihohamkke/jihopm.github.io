@@ -189,7 +189,7 @@ const app = Vue.createApp({
         setNick(e) {
             e.preventDefault();
             if (!this.nickname) {
-                alert('Set your name. JiHo will call you by that name');
+                alert('Set your name');
                 return;
             } else {
                 let msg = this.list;
