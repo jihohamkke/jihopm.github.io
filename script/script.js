@@ -1,7 +1,7 @@
 const app = Vue.createApp({
     data() {
         return {
-            profile: "profile3.jpg",
+            profile: "profile5.jpg",
             nickname: "",
             list:[],
             year:"2021",
